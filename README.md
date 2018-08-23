@@ -5,3 +5,9 @@
     - Instatiates git
     - Creates a README file and sets the provided name as the title
     - Launches the project with VS Code
+
+To make your script executable from any directory - `cp start-project.sh /usr/local/bin/start-project` 
+
+Run `which start-project` to ensure it worked.
+
+Usage: `start-project my-project-name`

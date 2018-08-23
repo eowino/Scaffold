@@ -34,5 +34,5 @@ else
     echo $'\n✏️  Launching Visual Studio Code\n'
     code .
 
-    echo $'\n🎉   Happy coding!\n'
+    echo $'\n🎉  Happy coding!\n'
 fi
