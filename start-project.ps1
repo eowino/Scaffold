@@ -3,10 +3,10 @@ $projectDir = "C:\Users\Evans\Documents\Projects\"
 function Is-Node {
     $response = Read-Host "`nIs this a Node project? (y/N): "
 
-    if (($response -eq $Null) -or ($response -like "n")) {
-        return $false
+    if ($response -like "y") {
+        return $True
     } else {
-        return $true
+        return $False
     }
 }
 
