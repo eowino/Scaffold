@@ -20,12 +20,15 @@ else
     echo $'\n🏁  Running "git init"\n'
     git init
 
-    echo $'\n📕  Adding README.md file\n'
+    echo $'\n📕  Adding README.md and .gitignore files\n'
     touch README.md && echo "# $1" > README.md
-    
+    touch .gitignore
+    echo ".DS_Store" >> .gitignore
+
     if [[ $isNode == "y" ]]; then
         echo $'\n🏃🏾  running "npm init -y"\n'
         npm init -y
+	echo "/node_modules" >> .gitignore
     fi
 
     echo $'\n📕  Project root: '$projectDir$1
